@@ -1,9 +1,9 @@
 import React, {Component, PropTypes} from 'react';
 
 class AddPlayerForm extends React.Component {
-    static propTypes: {
-        onAdd: React.PropTypes.func.isRequired,
-    };
+  //  static propTypes: {
+  //      onAdd: PropTypes.func.isRequired,
+  //  };
 
     state = {
         name: ''
