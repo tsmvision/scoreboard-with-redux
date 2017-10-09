@@ -1,13 +1,15 @@
-import React, {Component, PropTypes} from 'react';
+import React  from 'react';
 
 class AddPlayerForm extends React.Component {
-  //  static propTypes: {
-   //     addPlayer: PropTypes.func.isRequired,
-  //  };
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: ''
+        };
 
-    state = {
-        name: ''
-    };
+        this.onNameChange = this.onNameChange.bind(this);
+
+    }
 
     onNameChange(e) {
         const name = e.target.value;
