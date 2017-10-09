@@ -18,6 +18,7 @@ class AddPlayerForm extends React.Component {
         if (e) e.preventDefault();
         this.props.addPlayer(this.state.name);
         this.setState({name: ''});
+
     };
 
     render() {
