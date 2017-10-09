@@ -55,7 +55,7 @@ class Scoreboard extends React.Component {
         const playerComponents = players.map((player, index) => (
             <Player
                 index={index}
-                name={player.index}
+                name={player.name}
                 score={player.score}
                 key={player.name}
                 updatePlayerScore={updatePlayerScore}
